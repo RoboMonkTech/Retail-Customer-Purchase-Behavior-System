@@ -1,1 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Retail Customer Purchase Behavior Classification System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1><i class="fa-solid fa-cart-shopping"></i> Retail Customer Purchase Behavior Classification System</h1>
+
+<p>Business Intelligence Dashboard using Machine Learning</p>
+
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Customer Information</h2>
+
+<div class="form-group">
+
+<label>Customer Name</label>
+
+<input type="text" id="name" placeholder="Enter Customer Name">
+
+</div>
+
+<div class="form-group">
+
+<label>Age</label>
+
+<input type="number" id="age" placeholder="Enter Age">
+
+</div>
+
+<div class="form-group">
+
+<label>Annual Income (₹)</label>
+
+<input type="number" id="income" placeholder="Enter Annual Income">
+
+</div>
+
+<div class="form-group">
+
+<label>Spending Score (1-100)</label>
+
+<input type="number" id="score" placeholder="Enter Spending Score">
+
+</div>
+
+<div class="form-group">
+
+<label>Number of Purchases</label>
+
+<input type="number" id="purchase" placeholder="Enter Number of Purchases">
+
+</div>
+
+<div class="form-group">
+
+<label>Membership Type</label>
+
+<select id="membership">
+
+<option>Regular</option>
+
+<option>Silver</option>
+
+<option>Gold</option>
+
+<option>Premium</option>
+
+</select>
+
+</div>
+
+<button onclick="predictPurchase()">
+
+<i class="fa-solid fa-chart-line"></i>
+
+Predict Customer Behavior
+
+</button>
+
+</div>
+
+<div class="card result-card" id="resultBox">
+
+<div class="icon">
+
+<i class="fa-solid fa-users"></i>
+
+</div>
+
+<h2>Prediction Result</h2>
+
+<h1 id="output">Waiting for Prediction...</h1>
+
+<p id="message">
+
+Enter customer details and click Predict Customer Behavior.
+
+</p>
+
+<table>
+
+<tr>
+
+<td><b>Confidence</b></td>
+
+<td id="confidence">--</td>
+
+</tr>
+
+<tr>
+
+<td><b>Customer Category</b></td>
+
+<td id="category">--</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
