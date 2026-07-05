@@ -143,15 +143,28 @@ Retail-Customer-Purchase-Behavior-System/
 ├── README.md
 ├── Retail_Customer_Behavior.ipynb
 ├── customer_purchase_dataset.csv
+└── screenshots/
+```
 
+---
 
+# 📷 Screenshots
+
+Include screenshots of:
+
+- Home Page
+- Customer Information Form
+- High Purchase Customer Result
+- Low Purchase Customer Result
+- Google Colab Output
 
 ---
 
 # 🌐 Live Demo
 
-https://retail-customer-purchase-behavior-s.vercel.app/
+Replace the following URL with your Vercel deployment link:
 
+https://retail-customer-purchase-behavior-s.vercel.app/
 
 ---
 
